@@ -5,7 +5,7 @@
     </h4>
     <h1>total Buy = {{ buyClick7 }} บาท</h1>
 
-    <b-button variant="success" > ชำระเงิน </b-button>
+    <b-button variant="success" @click="CancelAllItem" v-on:click="say">จ่ายเงิน</b-button>
 
     <b-button variant="danger" @click="CancelAllItem">
       ยกเลิกการซื้อทั้งหมด
@@ -180,6 +180,11 @@ export default {
     };
   },
   methods: {
+    say: function() {
+      alert(
+        "ขอบคุณที่ใช้บริการ สินค้าที่คุณลูกค้าสั่งนั้นจะถูกจัดส่งให้ในเร็วๆนี้ กรุณาตรวจสอบสินค้าของท่านด้วย ปล.ไม่สามารถคือสินค้าได้นะอิอิ"
+      );
+    },
     buyClickI1() {
       this.buyClick1++;
       this.buyClick7 += 50000;
@@ -250,9 +255,6 @@ export default {
           (this.buyClick6 = 0),
           (this.buyClick7 = 0);
       }
-    },
-    showList() {
-      
     }
   }
 };
