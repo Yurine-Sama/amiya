@@ -70,7 +70,7 @@
           img-top
         >
           <b-card-text>
-            1,000 bath
+            1,000 บาท
           </b-card-text>
           <template #footer>
             <small class="text-muted"
