@@ -1,19 +1,49 @@
 <template>
   <div id="app">
-    <b-navbar type="dark" variant="dark">
-      <b-navbar-brand href="./Home">
-        <img
-          src="https://i.pinimg.com/originals/bd/41/0c/bd410c791d8598fc0b92afe5f9d96d03.png"
-          class="d-inline-block align-top"
-          alt="Amiya"
-          height="75"
-        />
-        Amiya-Shop
+    <b-navbar
+      toggleable="lg"
+      type="dark"
+      variant="info"
+      class="navbar-horizontal"
+    >
+      <b-navbar-brand href="#"
+        ><b-icon icon="cart"></b-icon> Amiya-Poster-Shop
       </b-navbar-brand>
+      <img
+        src="https://i.redd.it/vvuxyi4qadf41.jpg"
+        class="d-inline-block align-top"
+        alt="Amiya"
+        height="60"
+      />
+
+      <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+
+      <b-collapse id="nav-collapse" is-nav>
+        <!-- Right aligned nav items -->
+        <b-navbar-nav class="ml-auto">
+          <b-nav-form>
+            <li class="nav-item">
+              <a class="nav-link nav-link-icon" href="#">
+                <b-icon icon="person-circle"></b-icon> Login
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link nav-link-icon"
+                href="https://twitter.com/RenYuriww"
+                target="_black"
+              >
+                <b-icon icon=" twitter"> </b-icon> Twitter
+              </a>
+            </li>
+          </b-nav-form>
+        </b-navbar-nav>
+      </b-collapse>
     </b-navbar>
     <router-view />
   </div>
 </template>
+
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

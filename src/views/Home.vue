@@ -3,7 +3,7 @@
     <h4>
       <b-icon icon="cart"></b-icon>รายการสินค้า<b-icon icon="cart"></b-icon>
     </h4>
-    <h1>total Buy = {{ buyClick7 }} บาท</h1>
+    <h1>ราคาทั้งหมด = {{ buyClick7 }} บาท</h1>
 
     <b-button variant="success" @click="CancelAllItem" v-on:click="say">จ่ายเงิน</b-button>
 
