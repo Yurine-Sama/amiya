@@ -1,13 +1,19 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <b-navbar type="dark" variant="dark">
+      <b-navbar-brand href="./Home">
+        <img
+          src="https://i.pinimg.com/originals/bd/41/0c/bd410c791d8598fc0b92afe5f9d96d03.png"
+          class="d-inline-block align-top"
+          alt="Amiya"
+          height="75"
+        />
+        Amiya-Shop
+      </b-navbar-brand>
+    </b-navbar>
+    <router-view />
   </div>
 </template>
-
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
