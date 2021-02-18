@@ -23,11 +23,6 @@
         <b-navbar-nav class="ml-auto">
           <b-nav-form>
             <li class="nav-item">
-              <a class="nav-link nav-link-icon" href="#">
-                <b-icon icon="person-circle"></b-icon> Login
-              </a>
-            </li>
-            <li class="nav-item">
               <a
                 class="nav-link nav-link-icon"
                 href="https://twitter.com/RenYuriww"
